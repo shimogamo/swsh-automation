@@ -39,11 +39,11 @@ def main():
                 i -= 1
             else:
                 current = 1
-            logger.info(f'日：{current:02d} 消費：{args.frame-3-i} 残り：{i+3}')
             pad.press('LX MAX', .040, .035)
             pad.press('LX MAX', .040, .035)
             pad.press('LX MAX', .040, .035)
             pad.press('Button A', .045, .125)
+            logger.info(f'日：{current:02d} 消費：{args.frame-3-i} 残り：{i+3}')
             pad.press('Button A', .045, .125)
         pad.close()
     except KeyboardInterrupt:

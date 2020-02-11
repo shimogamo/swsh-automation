@@ -42,9 +42,9 @@ def main():
             pad.press('LX MAX', .040, .035)
             pad.press('LX MAX', .040, .035)
             pad.press('LX MAX', .040, .035)
-            pad.press('Button A', .045, .125)
+            pad.press('Button A', .046, .126)
             logger.info(f'日：{current:02d} 消費：{args.frame-3-i} 残り：{i+3}')
-            pad.press('Button A', .045, .125)
+            pad.press('Button A', .046, .126)
         pad.close()
     except KeyboardInterrupt:
         pad.close()
